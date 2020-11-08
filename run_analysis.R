@@ -77,7 +77,7 @@ print(focussed_data)
 
 tidy <- aggregate( . ~ PersonID + TypeOfActivity, data = focussed_data, FUN = mean )
 
-write.csv(tidy, file = "tidydataset.txt")
+write.csv(tidy, file = "tidydataset.txt", row.names =FALSE)
 
 }
 
