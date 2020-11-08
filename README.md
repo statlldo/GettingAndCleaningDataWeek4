@@ -10,15 +10,15 @@ Here are the data for the project:
 
 https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip
 
-run_analysis.R is the code written to do the following:
-Check if data files exist in working directory, and if not then download from the web
+run_analysis.R assumes the files have been downloaded into the working directory, and then:
 
-Read in the data for training and test, plus the associated files that provide the activity labels and personID
-Combine the data across these files into a single dataset
+Reads in the data for training and test, plus the associated files that provide the activity labels and personID
 
-Extract just those variables relating to Mean and Standard Deviation
+Combines the data across these files into a single dataset
 
-Tidy up the column names so they are more readable
+Extracts just those variables relating to Mean and Standard Deviation
 
-Finally, create a tidy dataset (see tidydataset.txt as the output) that takes the mean average of each variable for each subject and each activity.
+Tidies up the column names so they are more readable
+
+Finally, creates a tidy dataset (see tidydataset.txt as the output) that takes the mean average of each variable for each subject and each activity.
 
